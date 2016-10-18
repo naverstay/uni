@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="63px" height="64px" viewBox="0 0 63 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>12</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M753.810028,2784.6832 L777.732797,2728.38166 C779.056853,2725.26751 775.814787,2722.03218 772.666227,2723.27096 L717.486766,2745.02287 C714.307537,2746.27362 714.116783,2750.83974 717.260854,2752.17502 L741.16567,2762.33284 L746.368386,2784.09748 C747.19349,2787.70459 752.363291,2788.08835 753.810028,2784.6832 L753.810028,2784.6832 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="63.0368139" height="64.0324799" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="design" transform="translate(-715.000000, -2723.000000)" stroke="#2618FF" stroke-width="2">
+            <use id="12" mask="url(#mask-2)" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

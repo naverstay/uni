@@ -1,0 +1,751 @@
+include mixins
+doctype html
+html(lang='ru')
+    +dev_head('UNI account', false, false, false, true)
+
+    body.account_theme
+        +header('header_light', false, false, false, true)
+        .wrapper
+            .base
+                div.main_content
+                    //  Аккаунт
+                    #section_1.section.section_bg20.sectionBS
+                        img.imgBS.hide(src='i/account/section_1.jpg')
+                        .section_inner
+                            h3.section_title
+                                span.clr_blue_2 Uniaccount 
+                                span.clr_white  —&nbsp;быстрый старт
+                                    | вашего счета для бизнеса
+                            //-.section_sub_title.clr_gray Экспресс-гарантии 44-ФЗ и 223-ФЗ
+                                
+                            ul.service_benefits.clr_white
+                                li
+                                    .benefit_item
+                                        h3 1
+                                        p Зарезервировать 
+                                            span.dt_only  <br> 
+                                            | счет на сайте
+
+                                li
+                                    .benefit_item
+                                        h3 2
+                                        p Принести документы 
+                                            span.dt_only  <br> 
+                                            | в отделение
+
+                                li
+                                    .benefit_item
+                                        h3 3
+                                        p Подписать 
+                                            span.dt_only  <br> 
+                                            | договор
+                                
+                            .order_form(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                            )
+                                form(action='#')
+                                    .form_row.f_cell_v1
+                                        .form_cell
+                                            .f_input_v1: input(placeholder='Имя')
+
+                                        .form_cell
+                                            .f_input_v1: input(placeholder='Телефон или email')
+                                        .form_cell
+                                            button.btn_v2.get_guarantee_btn.blue_btn_v2(): span Зарезервировать счет
+
+                        .u_holder: .u_field: .uBlock.u_block
+                            svg(width="1445px" height="730px" viewBox="0 0 1445 730")
+                                | <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.2">
+                                |     <path d="M499.671875,717 L720.375,717 L490.394531,12.4101562 L230.628906,12.4101562 L0.6484375,717 L211.585938,717 L248.207031,576.863281 L463.050781,576.863281 L499.671875,717 Z M353.675781,175.007812 L357.582031,175.007812 L425.453125,430.867188 L285.804688,430.867188 L353.675781,175.007812 Z M1116.37109,729.207031 C1306.3125,729.207031 1443.51953,608.601562 1444.49609,432.820312 L1246.25391,432.820312 C1239.90625,514.363281 1188.14844,566.609375 1116.85938,566.609375 C1030.92188,566.609375 977.699219,491.414062 977.699219,363.972656 C977.699219,237.996094 1031.41016,162.800781 1116.37109,162.800781 C1188.14844,162.800781 1240.39453,216.023438 1245.27734,296.101562 L1443.51953,296.101562 C1443.03125,121.296875 1302.40625,0.203125 1116.37109,0.203125 C901.039062,0.203125 766.761719,132.039062 766.761719,364.460938 C766.761719,596.882812 900.550781,729.207031 1116.37109,729.207031 L1116.37109,729.207031 Z" id="AC" fill="#C5EBF1"></path>
+                                | </g>
+
+                            
+                    //  тарифы 
+                    #section_2.section.section_bg7.clr_black.sectionBS
+                        img.imgBS.hide(src='i/account/section_2.jpg')
+                        .section_inner
+                            h3.section_title.text_center(
+                            data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                            data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                            ) Тарифы
+
+                            ul.tarif_list
+                                li(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data--30p-top='transform: translate(0%,-10%); opacity: 0;'
+                                )
+                                    label.tarif_unit
+                                        input.hidden_inp(type='radio' name='tarif')
+                                        .tarif_inner.clr_gray
+                                            .tarif_caption Начальный
+                                            dl.tarif_options
+                                                dt 100
+                                                dd Количество безналичных платежей, в месяц
+                                                dt 100,000 руб.
+                                                dd Внесение наличных на счет, в месяц
+                                                
+                                                dt 100 руб.
+                                                dd Справка
+                                                
+                                                dt.clr_blue_2 1,699 руб.
+                                                dd За год  <br> или  1,999 руб. — в месяц
+                                        .tarif_footer
+
+                                li(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-75p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data--30p-top='transform: translate(0%,-10%); opacity: 0;'
+                                )
+                                    label.tarif_unit
+                                        input.hidden_inp(type='radio' name='tarif')
+                                        .tarif_inner.clr_gray
+                                            .tarif_caption Выгодный
+                                            dl.tarif_options
+                                                dt 1,000
+                                                dd Количество безналичных платежей, в месяц
+                                                dt 100,000,000 руб.
+                                                dd Внесение наличных на счет, в месяц
+                                                
+                                                dt 50 руб.
+                                                dd Справка
+                                                
+                                                dt.clr_blue_2 2,699 руб.
+                                                dd За год  <br> или  1,999 руб. — в месяц
+                                        .tarif_footer
+
+                                li(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-80p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data--30p-top='transform: translate(0%,-10%); opacity: 0;'
+                                )
+                                    label.tarif_unit
+                                        input.hidden_inp(type='radio' name='tarif')
+                                        .tarif_inner.clr_gray
+                                            .tarif_caption Уникальный 
+                                            dl.tarif_options
+                                                dt 1,200
+                                                dd Количество безналичных платежей, в месяц
+                                                dt 300,000,000 руб.
+                                                dd Внесение наличных на счет, в месяц
+                                                
+                                                dt Бесплатно
+                                                dd Справка
+                                                
+                                                dt.clr_blue_2 3,699 руб.
+                                                dd За год  <br> или  1,999 руб. — в месяц
+                                        .tarif_footer
+
+
+                            .text_center: .order_form.inline_mod(
+                            data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                            data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                            )
+                                form(action='#')
+                                    .form_row.f_cell_v1
+                                        .form_cell
+                                            .f_input_v1: input(placeholder='Имя')
+
+                                        .form_cell
+                                            .f_input_v1: input(placeholder='Телефон или email')
+                                        |  <br> 
+                                        .form_cell
+                                            button.btn_v2.get_guarantee_btn.blue_btn_v2(): span Зарезервировать счет
+                                            
+                            .text_center
+                                a.clr_white.gl_link(href='#') Узнать подробнее о тарифах
+
+                    // Преимущества
+
+                    #section_3.section.section_bg14_1.clr_gray
+                        .section_inner
+                            h3.section_title(
+                            data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                            data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                            ) Преимущества
+
+                            ul.company_features.company_features_v3
+                                li(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                )
+                                    .feature_item
+                                        .feature_icon
+                                            svg(width="68px" height="56px" viewBox="0 0 68 56")
+                                                | <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                |     <g id="design" transform="translate(-151.000000, -2409.000000)" stroke="#2618FF">
+                                                |         <g id="noun_103184_cc" transform="translate(152.000000, 2410.000000)">
+                                                |             <path d="M2,0 C0.9,0 0,0.9 0,2 L0,46 C0,47.1 0.9,48 2,48 L64,48 C65.1,48 66,47.1 66,46 L66,2 C66,0.9 65.1,0 64,0 L2,0 L2,0 Z" id="Shape"></path>
+                                                |             <path d="M7,44 C5.3,44 4,42.7 4,41 L4,7 C4,5.3 5.3,4 7,4 L59,4 C60.7,4 62,5.3 62,7 L62,13 L62,36 L62,41 C62,42.7 60.7,44 59,44 L7,44 Z" id="Shape"></path>
+                                                |             <path d="M24,35 C17.9,35 13,30.1 13,24 C13,17.9 17.9,13 24,13 C30.1,13 35,17.9 35,24 C35,30.1 30.1,35 24,35 L24,35 Z" id="Shape"></path>
+                                                |             <path d="M24,29 C21.2,29 19,26.8 19,24 C19,21.2 21.2,19 24,19 C26.8,19 29,21.2 29,24 C29,26.8 26.8,29 24,29 L24,29 Z" id="Shape"></path>
+                                                |             <rect id="Rectangle-path" x="14" y="23" width="3" height="2"></rect>
+                                                |             <rect id="Rectangle-path" x="31" y="23" width="3" height="2"></rect>
+                                                |             <rect id="Rectangle-path" x="23" y="14" width="2" height="3"></rect>
+                                                |             <rect id="Rectangle-path" x="23" y="31" width="2" height="3"></rect>
+                                                |             <rect id="Rectangle-path" transform="translate(17.989600, 18.004000) rotate(45.000000) translate(-17.989600, -18.004000) " x="16.4896144" y="17.0040096" width="2.99997123" height="1.99998082"></rect>
+                                                |             <rect id="Rectangle-path" transform="translate(30.010500, 29.995100) rotate(45.000000) translate(-30.010500, -29.995100) " x="28.5105144" y="28.9951096" width="2.99997123" height="1.99998082"></rect>
+                                                |             <rect id="Rectangle-path" transform="translate(29.995600, 17.989000) rotate(45.000000) translate(-29.995600, -17.989000) " x="28.9956096" y="16.4890144" width="1.99998082" height="2.99997123"></rect>
+                                                |             <rect id="Rectangle-path" transform="translate(18.004500, 30.010000) rotate(45.000000) translate(-18.004500, -30.010000) " x="17.0045096" y="28.5100144" width="1.99998082" height="2.99997123"></rect>
+                                                |             <path d="M10,54 C7.8,54 6,52.2 6,50 L6,48 L14,48 L14,50 C14,52.2 12.2,54 10,54 L10,54 Z" id="Shape"></path>
+                                                |             <path d="M56,54 C53.8,54 52,52.2 52,50 L52,48 L60,48 L60,50 C60,52.2 58.2,54 56,54 L56,54 Z" id="Shape"></path>
+                                                |         </g>
+                                                |     </g>
+                                                | </g>
+
+                                        .feature_caption Надежность банка
+                                        p Нам уже доверяют  более 18 тысяч клиентов – компаний и 200 тысяч частных  клиентов
+
+                                li(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-73p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                )
+                                    .feature_item
+                                        .feature_icon
+                                            svg(width="68px" height="64px" viewBox="0 0 68 64")
+                                                | <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                |     <g id="design" transform="translate(-430.000000, -2401.000000)" stroke="#2618FF">
+                                                |         <polygon id="Star-1" points="464 2453.5 443.427516 2464.31559 447.356511 2441.4078 430.713022 2425.18441 453.713758 2421.8422 464 2401 474.286242 2421.8422 497.286978 2425.18441 480.643489 2441.4078 484.572484 2464.31559"></polygon>
+                                                |     </g>
+                                                | </g>
+
+                                        .feature_caption Топ 30 банков
+                                        p За I квартал 2016 года прибыль банка составлила 524 млн. руб. 
+
+                                li(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-76p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                )
+                                    .feature_item
+                                        .feature_icon
+                                            svg(width="75px" height="65px" viewBox="0 0 75 65")
+                                                | <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                |     <g id="design" transform="translate(-709.000000, -2403.000000)" stroke="#2618FF">
+                                                |         <polyline id="Path-102" points="709.746094 2467.12109 723.804688 2433.78516 737.875 2455.88281 750.597656 2417.76562 765.835938 2437.65625 783.160156 2403"></polyline>
+                                                |     </g>
+                                                | </g>
+
+                                        .feature_caption Стабильность
+                                        p Достаточность капитала на 40% выше требуемой                                                              
+                                li(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-81p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                )
+                                    .feature_item
+                                        .feature_icon
+                                            svg(width="93px" height="57px" viewBox="0 0 93 57")
+                                                | <defs>
+                                                |     <polygon id="path-1" points="0 57 93 57 93 0 0 0"></polygon>
+                                                | </defs>
+                                                | <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                |     <g id="design" transform="translate(-982.000000, -2410.000000)">
+                                                |         <g id="Page-1" transform="translate(982.000000, 2410.000000)">
+                                                |             <path d="M84.5,56.5 L8.5,56.5 C4.082,56.5 0.5,52.918 0.5,48.5 L0.5,8.5 C0.5,4.082 4.082,0.5 8.5,0.5 L84.5,0.5 C88.918,0.5 92.5,4.082 92.5,8.5 L92.5,48.5 C92.5,52.918 88.918,56.5 84.5,56.5 L84.5,56.5 Z" id="Stroke-1" stroke="#2618FF" stroke-linecap="round"></path>
+                                                |             <mask id="mask-2" fill="white">
+                                                |                 <use xlink:href="#path-1"></use>
+                                                |             </mask>
+                                                |             <g id="Clip-4"></g>
+                                                |             <polygon id="Stroke-3" stroke="#2618FF" stroke-linecap="round" mask="url(#mask-2)" points="0.5 26.5 92.5 26.5 92.5 13.5 0.5 13.5"></polygon>
+                                                |             <path d="M11.5,42 L38.5,42" id="Stroke-5" stroke="#2618FF" stroke-linecap="round" mask="url(#mask-2)"></path>
+                                                |             <path d="M1.5,26.5 L15,13" id="Stroke-6" stroke="#2618FF" stroke-linecap="round" mask="url(#mask-2)"></path>
+                                                |             <path d="M11.5,26.5 L25,13" id="Stroke-7" stroke="#2618FF" stroke-linecap="round" mask="url(#mask-2)"></path>
+                                                |             <path d="M21.5,26.5 L35,13" id="Stroke-8" stroke="#2618FF" stroke-linecap="round" mask="url(#mask-2)"></path>
+                                                |             <path d="M31.5,26.5 L45,13" id="Stroke-9" stroke="#2618FF" stroke-linecap="round" mask="url(#mask-2)"></path>
+                                                |             <path d="M41.5,26.5 L55,13" id="Stroke-10" stroke="#2618FF" stroke-linecap="round" mask="url(#mask-2)"></path>
+                                                |             <path d="M51.5,26.5 L65,13" id="Stroke-11" stroke="#2618FF" stroke-linecap="round" mask="url(#mask-2)"></path>
+                                                |             <path d="M61.5,26.5 L75,13" id="Stroke-12" stroke="#2618FF" stroke-linecap="round" mask="url(#mask-2)"></path>
+                                                |             <path d="M71.5,26.5 L85,13" id="Stroke-13" stroke="#2618FF" stroke-linecap="round" mask="url(#mask-2)"></path>
+                                                |             <path d="M81.5,26.5 L92.5,15.5" id="Stroke-14" stroke="#2618FF" stroke-linecap="round" mask="url(#mask-2)"></path>
+                                                |         </g>
+                                                |     </g>
+                                                | </g>
+
+                                        .feature_caption Карты
+                                        p Корпоративные карты – простота и удобство
+
+                                li(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                )
+                                    .feature_item
+                                        .feature_icon
+                                            svg(width="73px" height="65px" viewBox="0 0 73 65")
+                                                | <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                                |     <g id="design" transform="translate(-149.000000, -2722.000000)" stroke="#2618FF">
+                                                |         <g id="13" transform="translate(150.000000, 2723.000000)">
+                                                |             <path d="M65.5978261,50.0078829 L65.5978261,57.0322732 C65.5978261,60.4804683 62.8334565,63.2761756 59.423913,63.2761756 L6.17391304,63.2761756 C2.76436957,63.2761756 0,60.4804683 0,57.0322732 L0,19.5688585 C0,16.1206634 2.76436957,13.3249561 6.17391304,13.3249561 L59.423913,13.3249561 C62.8334565,13.3249561 65.5978261,16.1206634 65.5978261,19.5688585 L65.5978261,25.0322732" id="Stroke-1"></path>
+                                                |             <path d="M6.17391304,13.3249561 L49.0664022,0.297053659 C53.0478043,-0.980604878 57.1086957,2.02427317 57.1086957,6.24827317 L57.1086957,7.08105366" id="Stroke-3"></path>
+                                                |             <path d="M71,43.7639805 L62.5108696,43.7639805 C59.1013261,43.7639805 56.3369565,40.9682732 56.3369565,37.520078 L56.3369565,37.520078 C56.3369565,34.0718829 59.1013261,31.2761756 62.5108696,31.2761756 L71,31.2761756 L71,43.7639805 L71,43.7639805 Z" id="Stroke-5"></path>
+                                                |         </g>
+                                                |     </g>
+                                                | </g>
+
+                                        .feature_caption Депозиты
+                                        p Депозиты от 1 дня по привлекательным ставкам
+
+                                li(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-73p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                )
+                                    .feature_item
+                                        .feature_icon
+                                            svg(width="59px" height="66px" viewBox="0 0 59 66")
+                                                | <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                |     <g id="design" transform="translate(-428.000000, -2723.000000)" stroke="#2618FF">
+                                                |         <g id="noun_129168_cc" transform="translate(429.000000, 2724.000000)">
+                                                |             <path d="M35.5555556,64 L3.55555556,64 C1.59525926,64 0,62.4047407 0,60.4444444 L0,3.55555556 C0,1.59525926 1.59525926,0 3.55555556,0 L35.5555556,0 C37.5158519,0 39.1111111,1.59525926 39.1111111,3.55555556 L39.1111111,60.4444444 C39.1111111,62.4047407 37.5158519,64 35.5555556,64 L35.5555556,64 Z" id="Shape"></path>
+                                                |             <polygon id="Shape" points="34.3703704 35.5555556 4.74074074 35.5555556 4.74074074 4.74074074 34.3703704 4.74074074"></polygon>
+                                                |             <polygon id="Shape" points="56.9072593 56.8888889 42.7407407 56.8888889 42.7407407 5.92592593 56.9072593 5.92592593"></polygon>
+                                                |             <rect id="Rectangle-path" x="47.4814815" y="8.2962963" width="2.37037037" height="46.2222222"></rect>
+                                                |             <polygon id="Shape" points="13.037037 46.2222222 4.74074074 46.2222222 4.74074074 37.9259259 13.037037 37.9259259"></polygon>
+                                                |             <polygon id="Shape" points="23.7037037 46.2222222 15.4074074 46.2222222 15.4074074 37.9259259 23.7037037 37.9259259"></polygon>
+                                                |             <polygon id="Shape" points="26.0740741 46.2222222 26.0740741 37.9259259 34.3703704 37.9259259 34.3703704 46.2222222"></polygon>
+                                                |             <polygon id="Shape" points="13.037037 56.8888889 4.74074074 56.8888889 4.74074074 48.5925926 13.037037 48.5925926"></polygon>
+                                                |             <polygon id="Shape" points="23.7037037 56.8888889 15.4074074 56.8888889 15.4074074 48.5925926 23.7037037 48.5925926"></polygon>
+                                                |             <polygon id="Shape" points="34.3703704 56.8888889 26.0740741 56.8888889 26.0740741 48.5925926 34.3703704 48.5925926"></polygon>
+                                                |         </g>
+                                                |     </g>
+                                                | </g>
+
+                                        .feature_caption Эквайринг
+                                        p Эквайринг – прием карт всех платежных систем
+                                        
+                                li(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-76p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                )
+                                    .feature_item
+                                        .feature_icon
+                                            svg(width="63px" height="64px" viewBox="0 0 63 64")
+                                                | <defs>
+                                                |     <path d="M753.810028,2784.6832 L777.732797,2728.38166 C779.056853,2725.26751 775.814787,2722.03218 772.666227,2723.27096 L717.486766,2745.02287 C714.307537,2746.27362 714.116783,2750.83974 717.260854,2752.17502 L741.16567,2762.33284 L746.368386,2784.09748 C747.19349,2787.70459 752.363291,2788.08835 753.810028,2784.6832 L753.810028,2784.6832 Z" id="path-1"></path>
+                                                |     <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="63.0368139" height="64.0324799" fill="white">
+                                                |         <use xlink:href="#path-1"></use>
+                                                |     </mask>
+                                                | </defs>
+                                                | <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                |     <g id="design" transform="translate(-715.000000, -2723.000000)" stroke="#2618FF" stroke-width="2">
+                                                |         <use id="12" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                                                |     </g>
+                                                | </g>
+                                            
+                                        .feature_caption Онлайн сервисы
+                                        p Создаем удобные и быстрые сервисы для работы с банком через интернет.
+                                        
+                                li(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-79p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                )
+                                    .feature_item
+                                        .feature_icon
+                                            svg(width="57px" height="66px" viewBox="0 0 57 66")
+                                                | <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                |     <g id="design" transform="translate(-983.000000, -2723.000000)" stroke="#2618FF">
+                                                |         <g id="14" transform="translate(983.000000, 2723.000000)">
+                                                |             <path d="M0.558823529,54.8135593 L0.558823529,28.5254237 C0.558823529,13.0803051 13.0686471,0.559322034 28.5,0.559322034 L28.5,0.559322034 C43.9313529,0.559322034 56.4411765,13.0803051 56.4411765,28.5254237 L56.4411765,54.8135593" id="Stroke-1"></path>
+                                                |             <path d="M56.4411765,54.2542373 L51.9705882,54.2542373 C49.5017059,54.2542373 47.5,52.2507458 47.5,49.779661 L47.5,40.8305085 C47.5,38.3594237 49.5017059,36.3559322 51.9705882,36.3559322 L56.4411765,36.3559322 L56.4411765,54.2542373 L56.4411765,54.2542373 Z" id="Stroke-3"></path>
+                                                |             <path d="M5.02941176,54.2542373 L0.558823529,54.2542373 L0.558823529,36.3559322 L5.02941176,36.3559322 C7.49829412,36.3559322 9.5,38.3594237 9.5,40.8305085 L9.5,49.779661 C9.5,52.2507458 7.49829412,54.2542373 5.02941176,54.2542373 L5.02941176,54.2542373 Z" id="Stroke-5"></path>
+                                                |             <path d="M56.4411765,54.8135593 L56.4411765,54.8135593 C56.4411765,59.4469831 52.6881176,63.2033898 48.0588235,63.2033898 L38,63.2033898" id="Stroke-7"></path>
+                                                |             <path d="M35.2058824,65.440678 L29.6176471,65.440678 C28.3826471,65.440678 27.3823529,64.4394915 27.3823529,63.2033898 L27.3823529,63.2033898 C27.3823529,61.9672881 28.3826471,60.9661017 29.6176471,60.9661017 L35.2058824,60.9661017 C36.4408824,60.9661017 37.4411765,61.9672881 37.4411765,63.2033898 L37.4411765,63.2033898 C37.4411765,64.4394915 36.4408824,65.440678 35.2058824,65.440678 L35.2058824,65.440678 Z" id="Stroke-9"></path>
+                                                |         </g>
+                                                |     </g>
+                                                | </g>
+                                            
+                                        .feature_caption Поддержка 24/7
+                                        p Решаем вопросы быстро, доступны всегда по телефону 8&nbsp;800&nbsp;333&nbsp;04&nbsp;04
+                                        
+                                        
+                    // Резерв
+                    #section_4.section.section_bg3.clr_white.sectionBS
+                        img.imgBS.hide(src='i/account/section_3.jpg')
+                        .section_inner
+                            h3.section_title(
+                            data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                            data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                            ) Зарезервируйте  
+                                span.dt_only  <br>  
+                                | счет онлайн
+
+                            .article_v4.clr_white
+                                p(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                ) ПАО КБ «Восточный» объявляет о завершении процедуры приема заявок акции в рамках дополнительной эмиссии. В ходе открытой подписки были удовлетворены заявки на полную сумму эмиссии — 3 млрд рублей. Банк получил заявки от восьми инвесторов, спрос на его акции вдвое превысил предложение.
+                                
+                                p(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                ) В дополнительной эмиссии принимает участие компания Эвизон, контролируемая фондами Baring Vostok (основной акционер «Восточного»), а также «Юниаструм Банк», доля которого в капитале банка в результате может составить чуть менее 25%. Окончательное распределение акций будет понятно после подведения итогов эмиссии и регистрации Отчета Банком России.
+                                
+                            .order_form(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                            )
+                                form(action='#')
+                                    .form_row.f_cell_v1
+                                        .form_cell
+                                            .f_input_v1: input(placeholder='Имя')
+
+                                        .form_cell
+                                            .f_input_v1: input(placeholder='Телефон или email')
+                                        .form_cell
+                                            button.btn_v2.get_guarantee_btn.blue_btn_v2(): span Зарезервировать счет
+                                            
+                    .section.section_bg21.clr_gray
+                        .section_inner
+                            .review_item
+                                p(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                ) Стать агентом банка это один из наиболее эффективных и надежных способов обеспечения исполнения обязательств, обеспечение заявки на участие в конкурсе, обеспечение исполнения контракта.
+
+                            .author_item(
+                            data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                            data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                            )
+                                .author_photo
+                                    img(src='i/factor/author_1.png')
+                                .author_name Альберто Жиллардино
+                                .author_post CEO Вимм Билль Данн
+                                                    
+                                    
+                    // Депозиты
+                    #section_5.section.section_bg22.clr_gray.dt_only
+                        .section_inner
+                            h3.section_title(
+                            data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                            data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                            ) Депозиты для  <br>  юридических лиц
+                            
+                            .deposite_table_w: table.deposite_table.clr_gray
+                                thead
+                                    tr(
+                                    data-100p-top='transform: translate(0%,50%); opacity: 0;'
+                                    data-90p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                    )  
+                                        th.col_1 &nbsp;
+                                        th.col_2 
+                                            span Стабильный  <br>  доход
+                                        th.col_3 
+                                            span Активный  <br>  капитал
+                                        th.col_4
+                                            span Деловой  <br>  подход
+                                        th.col_5
+                                            span Максимальный  <br>  доход
+                                            
+                                tbody
+                                    tr(
+                                    data-100p-top='transform: translate(0%,50%); opacity: 0;'
+                                    data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                    )
+                                        td.col_1: span Валюта
+                                        td.col_2(colspan=4)
+                                            .edged_caption
+                                                span.icon-before.icon-rub
+                                
+                                    tr(
+                                    data-100p-top='transform: translate(0%,50%); opacity: 0;'
+                                    data-90p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                    )
+                                        td.col_1: span Минимальная сумма
+                                        td.col_2: span 100,000 руб.
+                                        td.col_3: span 300,000 руб.
+                                        td.col_4: span 50,000 руб.
+                                        td.col_5: span 50,000 руб.
+                                                                            
+                                    tr(
+                                    data-100p-top='transform: translate(0%,50%); opacity: 0;'
+                                    data-90p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                    )
+                                        td.col_1: span Срок
+                                        td.col_2: span От 1 дня  <br> до 1 года
+                                        td.col_3(colspan=3)
+                                            .edged_caption
+                                                span 1 год
+
+                                    tr(
+                                    data-100p-top='transform: translate(0%,50%); opacity: 0;'
+                                    data-90p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                    )
+                                        td.col_1: span Выплата процентов
+                                        td.col_2: span В конце  <br>  срока
+                                        td.col_3(colspan=3)
+                                            span Ежемесячно и в конце срока
+                                        
+                                    tr(
+                                    data-100p-top='transform: translate(0%,50%); opacity: 0;'
+                                    data-90p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                    )
+                                        td.col_1: span Пополнение
+                                        td.col_2: span.icon-before.icon-wrong.deposite_option
+                                        td.col_3: span.icon-before.icon-ok.deposite_option
+                                        td.col_4: span.icon-before.icon-wrong.deposite_option
+                                        td.col_5: span.icon-before.icon-wrong.deposite_option
+
+                                    tr(
+                                    data-100p-top='transform: translate(0%,50%); opacity: 0;'
+                                    data-90p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                    )
+                                        td.col_1: span Частичное изъятие
+                                        td.col_2: span.icon-before.icon-wrong.deposite_option
+                                        td.col_3: span.icon-before.icon-ok.deposite_option
+                                        td.col_4: span.icon-before.icon-ok.deposite_option
+                                        td.col_5: span.icon-before.icon-wrong.deposite_option
+
+                                    tr(
+                                    data-100p-top='transform: translate(0%,50%); opacity: 0;'
+                                    data-90p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                    )
+                                        td.col_1: span Полное изъятие
+                                        td.col_2: span.icon-before.icon-wrong.deposite_option
+                                        td.col_3: span.icon-before.icon-ok.deposite_option
+                                        td.col_4: span.icon-before.icon-wrong.deposite_option
+                                        td.col_5: span.icon-before.icon-wrong.deposite_option
+                                        
+                                    tr(
+                                    data-100p-top='transform: translate(0%,50%); opacity: 0;'
+                                    data-90p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                    data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                    )
+                                        td.col_1: span Неснижаемый остаток
+                                        td.col_2: span.icon-before.icon-wrong.deposite_option
+                                        td.col_3: span.icon-before.icon-wrong.deposite_option
+                                        td.col_4: span.icon-before.icon-ok.deposite_option
+                                        td.col_5: span.icon-before.icon-wrong.deposite_option
+                                        
+                            .order_form(
+                            data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                            data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                            )
+                                form(action='#')
+                                    .form_row.f_cell_v1.input_bdr_mod
+                                        .form_cell
+                                            .f_input_v1: input(placeholder='Имя')
+
+                                        .form_cell
+                                            .f_input_v1: input(placeholder='Телефон или email')
+                                        .form_cell
+                                            button.btn_v2.get_guarantee_btn.blue_btn_v2(): span Зарезервировать счет
+
+                    .section.section_bg21.clr_gray
+                        .section_inner
+                            .review_item
+                                p(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                                data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                                ) Стать агентом банка это один из наиболее эффективных и надежных способов обеспечения исполнения обязательств, обеспечение заявки на участие в конкурсе, обеспечение исполнения контракта.
+
+                            .author_item(
+                            data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                            data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                            )
+                                .author_photo
+                                    img(src='i/factor/author_1.png')
+                                .author_name Альберто Жиллардино
+                                .author_post CEO Вимм Билль Данн
+                                    
+                    #section_6.section.section_bg8.sectionBS
+                        img.imgBS.hide(src='i/account/section_4.jpg')
+                        .section_inner
+                            h3.section_title.text_center.clr_gray(
+                            data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                            data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                            )
+                                | Зарезервируйте счет
+                            .text_center: .order_form.center_mod(
+                            data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                            data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                            )
+                                form(action='#')
+                                    .form_row.f_cell_v1
+                                        .form_cell
+                                            .f_input_v1: input(placeholder='Имя')
+
+                                        .form_cell
+                                            .f_input_v1: input(placeholder='Телефон или email')
+                                        .form_cell
+                                            button.btn_v2.get_guarantee_btn.green_btn(): span Зарезервировать счет
+
+                    // Новости
+                    #section_7.section.section_bg19.clr_black_2
+                        .section_inner: .news_block
+                            h3.section_title(
+                            data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                            data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-10p-top='transform: translate(0%,0%); opacity: 1;'
+                            data-0-top='transform: translate(0%,-30%); opacity: 0;'
+                            ) Новости
+
+                            ul.news_list
+                                li(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                                )
+                                    .news_unit
+                                        a.news_img.openNewsPopup(href='#')
+                                            img(src='i/factor/news_1.jpg')
+
+                                        .news_inner
+                                            a.clr_black_3.gl_link.openNewsPopup(href='#') «Юниаструм Банк» вошел в топ-30 по прибыли по итогам 1 квартала 2016 года
+                                li(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-73p-top='transform: translate(0%,0%); opacity: 1;'
+                                )
+                                    .news_unit
+                                        a.news_img.openNewsPopup(href='#')
+                                            img(src='i/factor/news_1.jpg')
+
+                                        .news_inner
+                                            a.clr_black_3.gl_link.openNewsPopup(href='#') «Юниаструм Банк» вошел в топ-30 по прибыли по итогам 1 квартала 2016 года
+                                li(
+                                data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                                data-76p-top='transform: translate(0%,0%); opacity: 1;'
+                                )
+                                    .news_unit
+                                        a.news_img.openNewsPopup(href='#')
+                                            img(src='i/factor/news_1.jpg')
+
+                                        .news_inner
+                                            a.clr_black_3.gl_link.openNewsPopup(href='#') «Юниаструм Банк» вошел в топ-30 по прибыли по итогам 1 квартала 2016 года
+
+                            .more_news(
+                            data-100p-top='transform: translate(0%,200%); opacity: 0;'
+                            data-70p-top='transform: translate(0%,0%); opacity: 1;'
+                            )
+                                a.gl_link(href='#') Больше новостей
+                                
+                .footer
+                    .section_inner
+                        .footer_row
+                            .fl
+                                .callback_block.clr_white
+                                    .callback_phone 8 800 333 04 04
+                                    p
+                                        span Звоните или 
+                                        a.gl_link.callbakc_link.clr_white.openCallBackForm(href='#') закажите звонок
+                            .fr
+                                .footer_menu
+                                    li: a.gl_link(href='#') О продукте
+                                    li: a.gl_link(href='#') Калькулятор
+                                    li: a.gl_link.openCallBackCompleteForm(href='#') Отзывы
+                                    li: a.gl_link.restoreCompliteFormOpen(href='#') Оформление
+                                    li: a.gl_link.restoreFormOpen(href='#') Контакты
+                        .footer_row
+                            .footer_box
+                                p.clr_gray_4 Есть вопросы?
+                                p 
+                                    a.gl_link.clr_white(href='mailto:hello@unitender.com') hello@unitender.com
+    
+                            .footer_box
+                                p.clr_gray_4 Приходите в гости
+                                p.clr_white Московская обл., 8-ой км Рублево-Успенского шоссе,  <br> Одинцовский р-н, д. Барвиха, д. 114
+    
+                            ul.footer_soc
+                                li: a.soc_link.icon-fb(href='#')
+                                li: a.soc_link.icon-tw(href='#')
+                                li: a.soc_link.icon-gp(href='#')
+                                li: a.soc_link.icon-vk(href='#')
+
+        .aside_menu_holder
+            a.aside_close_btn.openAsideMenu(href='#')
+
+            .aside_menu_inner
+                ul#navigation.aside_menu
+                    li: a.aside_m_link(href='#section_1') Аккаунт 
+                    li: a.aside_m_link(href='#section_2') Тарифы
+                    li: a.aside_m_link(href='#section_3') Преимущества
+                    li: a.aside_m_link(href='#section_4') Резерв
+                    li: a.aside_m_link(href='#section_5') Депозиты
+                    li: a.aside_m_link(href='#section_6') Контакты
+                    li: a.aside_m_link(href='#section_7') Новости
+                
+                .aside_info
+                    .aside_company 
+                        span.clr_green UNIASTRUM 
+                        span BANK
+                    
+                    dl.aside_address
+                        dt МОСКВА
+                        dd
+                            | 80 Franklin Street, Suite 1  <br> 
+                            | New York, NY 10013, USA  <br> 
+                            b 8 800 333 04 04
+                            
+                        dt САНКТ-ПЕТЕРБУРГ
+                        dd
+                            | 80 Franklin Street, Suite 1  <br> 
+                            | New York, NY 10013, USA  <br> 
+                            b 8 800 333 04 04
+                            
+        .dialog_viewport.ui-widget-overlay
+            +popups()
+            
